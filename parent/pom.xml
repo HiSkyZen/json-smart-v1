@@ -120,11 +120,11 @@
 		</plugins>
 	</build>
 
-	<scm>
+	<!-- scm>
 		<connection>scm:git:https://code.google.com/p/json-smart.v1/</connection>
 		<developerConnection>scm:git:https://code.google.com/p/json-smart.v1/</developerConnection>
 		<url>scm:git:https://code.google.com/p/json-smart.v1/</url>
-	</scm>
+	</scm -->
 
 	<reporting>
 		<plugins>
@@ -155,21 +155,14 @@
 	</modules>
 
 	<distributionManagement>
-		<!-- My project's Sonatype repository to be used by the release plugin -->
-		<repository>
-			<id>sonatype-nexus-staging</id>
-			<name>Nexus Release Repository</name>
-			<url>
-http://oss.sonatype.org/service/local/staging/deploy/maven2
-</url>
-		</repository>
-		<snapshotRepository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>My Nexus Snapshots Repository</name>
-			<url>
-https://oss.sonatype.org/content/repositories/snapshots
-</url>
-		</snapshotRepository>
+        <repository>
+            <id>mchan.us</id>
+            <url>file:///maven/</url>
+        </repository>
+        <snapshotRepository>
+            <id>mchan.us</id>
+            <url>file:///maven/</url>
+        </snapshotRepository>
 	</distributionManagement>
 
 	<profiles>
